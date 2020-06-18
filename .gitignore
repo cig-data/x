@@ -1,0 +1,18 @@
+# IDE
+.DS_Store
+.vscode/
+
+# dependencies
+node_modules
+.nyc_output
+package-lock.json
+yarn.lock
+
+# production
+.cache
+
+# misc
+*.log
+*.swp
+npm-debug.log
+.scannerwork/
