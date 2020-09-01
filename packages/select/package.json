@@ -1,0 +1,38 @@
+{
+  "name": "@cig/select",
+  "version": "0.0.7",
+  "description": "React Select Control",
+  "keywords": [
+    "react",
+    "select",
+    "mobile"
+  ],
+  "author": "z <zhaochunye@cig.com.cn>",
+  "homepage": "https://github.com/cig-data/x/tree/master/packages/select#readme",
+  "license": "ISC",
+  "main": "lib/select.tsx",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cig-data/x.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/cig-data/x/issues"
+  },
+  "dependencies": {
+    "@better-scroll/core": "^2.0.1",
+    "@better-scroll/wheel": "^2.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.1"
+  }
+}

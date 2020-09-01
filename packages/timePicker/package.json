@@ -1,0 +1,41 @@
+{
+  "name": "@cig/timepicker",
+  "version": "0.0.1",
+  "description": "React Time Picker Control",
+  "keywords": [
+    "react",
+    "time",
+    "picker",
+    "mobile"
+  ],
+  "author": "z <zhaochunye@cig.com.cn>",
+  "homepage": "https://github.com/cig-data/x/tree/master/packages/timePicker#readme",
+  "license": "ISC",
+  "main": "lib/index.tsx",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cig-data/x.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/cig-data/x/issues"
+  },
+  "dependencies": {
+    "@cig/select": "^0.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
