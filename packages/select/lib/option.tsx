@@ -73,11 +73,11 @@ export default (
           data.map(
             v => (
               <li
-                cn={(typeof value === 'string' ? (cho || value) === v : (cho?.value || value?.value) === v.value) ? 'active' : ''}
+                cn={(typeof value !== 'object' ? (cho || value) === v : (cho?.value || value?.value) === v.value) ? 'active' : ''}
                 className="wheel-item"
-                key={typeof v === 'string' ? v : v.value}
+                key={typeof v !== 'object' ? v : v.value}
               >
-                {typeof v === 'string' ? v : v.value}
+                {typeof v !== 'object' ? v : v.value}
               </li>
             ),
           )

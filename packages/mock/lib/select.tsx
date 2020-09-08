@@ -10,7 +10,7 @@ import {
 
 export default () => {
   const [show, setShow] = useState(false)
-  const [value, setValue] = useState(['a', 'b', 'c', 'd', 'e', 'f'])
+  const [value, setValue] = useState(['a', 'b', 'c', 'd'])
   const title = '新易互动...'
   const confirmValue = '确定'
   const data = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i']
@@ -26,6 +26,7 @@ export default () => {
         tabIndex={0}
       >
         {show ? 'Select Hide' : 'Select Show'}
+        <p>{JSON.stringify(value)}</p>
       </div>
       {
         show

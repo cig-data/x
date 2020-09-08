@@ -8,7 +8,7 @@ module.exports = {
   target: 'web',
   mode: 'development',
   entry: {
-    app: ['./packages/mock/src/index.tsx'],
+    app: ['./packages/mock/lib/index.tsx'],
   },
   output: {
     path: path.resolve(__dirname, './'),

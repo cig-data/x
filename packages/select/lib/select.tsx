@@ -66,7 +66,7 @@ export default (
         </Cancal>
         <Option>
           {
-            data.map(
+            value.map(
               (v, i) => (
                 <Items
                   key={[...new Array(99).keys()][i]}

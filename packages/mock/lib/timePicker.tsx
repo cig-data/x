@@ -10,10 +10,11 @@ import {
 
 export default () => {
   const [show, setShow] = useState(false)
-  const [value, setValue] = useState(['a', 'b', 'c', 'd', 'e', 'f'])
+  const [value, setValue] = useState('2020-10-01')
   const title = '新易互动...'
   const confirmValue = '确定'
-  const data = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i']
+  const minDate = '2010-01-01'
+  const maxDate = '2020-12-31'
 
   useEffect(() => console.log(value), [value])
 
@@ -25,7 +26,8 @@ export default () => {
         onKeyUp={() => {}}
         tabIndex={0}
       >
-        {show ? 'Time Pikcer Hide' : 'Time Picker Show'}
+        {show ? 'Time Picker Hide' : 'Time Picker Show'}
+        <p>{JSON.stringify(value)}</p>
       </div>
       {
         show
@@ -33,9 +35,9 @@ export default () => {
             <Select
               title={title}
               value={value}
-              data={[data, data, data, data]}
+              minDate={minDate}
+              maxDate={maxDate}
               show={v => setShow(v)}
-              update={v => setValue(v)}
               confirmValue={confirmValue}
               confirm={v => setValue(v)}
             />

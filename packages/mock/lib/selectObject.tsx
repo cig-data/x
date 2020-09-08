@@ -60,6 +60,7 @@ export default () => {
         tabIndex={0}
       >
         {show ? 'Select Object Hide' : 'Select Object Show'}
+        <p>{JSON.stringify(value)}</p>
       </div>
       {
         show

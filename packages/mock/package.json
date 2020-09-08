@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@cig/select": "^0.0.1",
+    "@cig/select": "^0.0.7",
     "@cig/timepicker": "^0.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
