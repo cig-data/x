@@ -1,6 +1,9 @@
 # @cig/select
 > The Select control for React.
 
+## Demo
+[https://codesandbox.io/s/cigselect-vsk7i](https://codesandbox.io/s/cigselect-vsk7i)
+
 ## Installation and usage
 > The easiest way to use @cig/select is to install it from npm and build it into your app with Webpack.
 
