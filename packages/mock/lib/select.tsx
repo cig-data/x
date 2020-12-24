@@ -2,7 +2,7 @@ import React, {
   useState,
   useEffect,
 } from 'react'
-import Select from '@cig/select'
+import Select from '../../select/lib/select'
 
 import {
   Box,

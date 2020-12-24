@@ -37,7 +37,7 @@ export default (
   const [cho, setCho] = useState([])
 
   useEffect(() => {
-    !cho.length && value.length && setCho(value)
+    value.length && setCho(value)
   }, [value])
 
   useEffect(() => {

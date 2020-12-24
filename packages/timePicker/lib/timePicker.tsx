@@ -31,6 +31,7 @@ const TP = (
   const [cho, setCho] = useState([])
   const minD = minDate.split('-')
   const maxD = maxDate.split('-')
+
   useEffect(() => {
     const ya = []
     for (let i = Number(maxD[0]); i >= Number(minD[0]); i -= 1) ya.push(i.toString())
@@ -44,9 +45,9 @@ const TP = (
     const ma = []
     const sm = cho[0] === Number(minD[0]) ? Number(minD[1]) : 1
     const em = cho[0] === Number(maxD[0]) ? Number(maxD[1]) : 12
-    for (let i = em; i >= sm; i -= 1) ma.push(i > 9 ? i.toString() : `0${i}`)
+    for (let i = sm; i <= em; i += 1) ma.push(i > 9 ? i.toString() : `0${i}`)
     setMonthArr(ma)
-  }, [yearArr, value])
+  }, [yearArr, cho])
 
   useEffect(() => {
     if (!monthArr.length) return
@@ -54,8 +55,9 @@ const TP = (
     const da = []
     const sd = cho[1] === Number(minD[1]) ? Number(minD[2]) : 1
     const ed = cho[1] === Number(maxD[1]) ? Number(maxD[2]) : (new Date(cho[0], cho[1], 0)).getDate()
-    for (let i = ed; i >= sd; i -= 1) da.push(i > 9 ? i.toString() : `0${i}`)
+    for (let i = sd; i <= ed; i += 1) da.push(i > 9 ? i.toString() : `0${i}`)
     setDayArr(da)
+    console.log(cho)
   }, [monthArr])
 
   return (

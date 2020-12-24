@@ -2,7 +2,7 @@ import React, {
   useState,
   useEffect,
 } from 'react'
-import Select from '@cig/timepicker'
+import Select from '../../timepicker/lib/timePicker'
 
 import {
   Box,

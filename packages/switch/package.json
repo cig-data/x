@@ -1,17 +1,16 @@
 {
-  "name": "@cig/timepicker",
-  "version": "0.0.5",
-  "description": "React Time Picker Control",
+  "name": "@cig/switch",
+  "version": "0.0.1",
+  "description": "React Switch Control",
   "keywords": [
     "react",
-    "time",
-    "picker",
+    "switch",
     "mobile"
   ],
   "author": "z <zhaochunye@cig.com.cn>",
-  "homepage": "https://github.com/cig-data/x/tree/master/packages/timePicker#readme",
+  "homepage": "https://github.com/cig-data/x/tree/master/packages/switch#readme",
   "license": "ISC",
-  "main": "lib/timePicker.tsx",
+  "main": "lib/switch.tsx",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -30,12 +29,8 @@
     "url": "https://github.com/cig-data/x/issues"
   },
   "dependencies": {
-    "@cig/select": "^0.0.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "styled-components": "^5.1.1"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
